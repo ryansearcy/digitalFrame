@@ -5,7 +5,7 @@ digitalFrame = Flask(__name__)
 
 @digitalFrame.route("/")
 def startServer():
-    return render_template('settings.html', transitionTime=os.environ["TRANSITIONTIME"], photoPath=os.environ["PHOTOPATH"])
+    return render_template('settings.html', transitionTime=os.environ['TRANSITIONTIME'], photoPath=os.environ['PHOTOPATH'])
 
 @digitalFrame.route("/setTransitionTime")
 def setTransitionTime():
